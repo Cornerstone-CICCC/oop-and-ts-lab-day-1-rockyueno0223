@@ -42,7 +42,7 @@ class Animal {
 
   attack(target) {
     if (this.energy < this.decrease) {
-      console.log(`${this.name} doesn't have enough energy to attack!`);
+      console.log(`${this.name} doesn't have enough energy to attack!\n${this.name}'s energy: ${this.energy}\n${target.name}'s energy: ${target.energy}`);
     } else {
       this.energy -= this.decrease;
       target.energy -= this.decrease;
